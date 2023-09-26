@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <%- include ("partials/header") %>
+    <title>404 找不到頁面</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .error-content {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .error img {
+        width: 50%;
+        height: auto;
+      }
+
+      .text {
+        padding-left: 20px; /* 調整文字與圖片之間的間距 */
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+
+    <div class="error">
+      <div class="error-content">
+        <img
+          src="https://wilson-ren.netlify.app/static/media/404%20Error-bro.294181ca.png"
+          alt="404"
+        />
+        <div class="text">
+          <h1>404 找不到頁面</h1>
+          <p>抱歉，您請求的頁面找不到。</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
